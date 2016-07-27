@@ -1,0 +1,196 @@
+.subtext {
+    font-size: .8em;
+    font-style: italic;
+}
+
+.video {
+    position: relative;
+}
+.upperText {
+    display: none;
+}
+#name {
+    font-family: Gotham, Avenir, sans-serif;
+    font-weight: lighter;
+    left: 18.5%;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: .8em;
+    opacity: .5;
+    z-index: 2;
+}
+#back{
+    font-family: Gotham, Avenir, sans-serif;
+    font-weight: lighter;
+    left: 18.5%;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: .8em;
+    opacity: .5;
+    z-index: 2;
+}
+#description {
+    font-family: Gotham, Avenir, sans-serif;
+    font-weight: lighter;
+    left: 20%;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: .8em;
+    opacity: .5;
+    z-index: 2;
+    width: 30em
+}
+
+
+#title {
+    font-family: Gotham, Avenir, sans-serif;
+    font-weight: lighter;
+    left: 20%;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: .8em;
+    opacity: .5;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#container{
+    position: absolute;
+    left: 20%;
+}
+
+#container img {
+    opacity: 0;
+}
+
+.upperSpacer{
+    position: relative;
+    height: 100px;
+}
+
+.spacer { 
+    position: relative;
+    height: 1em;
+}
+
+.outerSpacer {
+    position: relative;
+    height: 40px;
+}
+
+div[class^="innerText-"] {
+    font-family: Gotham, Avenir, sans-serif;
+    font-weight: lighter;
+    color: black;
+    font-size: .8em;
+    position: absolute;
+    width: 400px;
+    margin-left: 33.5em;
+    opacity: 0;
+}
+
+div[id^="tn-"] {
+    position: relative;
+    height: 1em;
+
+    background-size: 400px;
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 2500ms;
+    z-index: 2;
+    
+}
+
+#tn-graphicdesign {
+    background-image: url(images/graphicdesign/tn/tn-graphicdesign.jpg);
+         width: 0em;
+}
+
+#tn-float {
+    background-image: url(images/float/tn/tn-float.png);
+         width: 0em;
+}
+
+#tn-othervideo {
+    background-image: url(images/othervideo/tn/tn-othervideo);
+         width: 0em;
+}
+
+#tn-hive {
+    background-image: url(images/hive/tn/4_tn.jpg);
+        width: 0em;
+}
+
+#tn-noisy {
+    background-image: url(images/noisey/tn/1_tn.jpg);
+        width: 0em;
+}
+
+#tn-map {
+    background-image: url(images/mapstutter/tn/1-tn.jpg);
+      width: 0em;
+}
+
+#tn-darkroom {
+    background-image: url(images/darkroom/tn/2-tn.jpg);
+    width: 0em;
+}
+
+#tn-surface {
+    background-image: url(images/surface/tn/3-tn.jpg);
+    width: 0em;
+}
+
+#tn-screws {
+    background-image: url(images/shakingscrews/tn/screws-tn);
+        width: 0em;
+}
+
+#tn-othergame {
+    background-image: url(images/othergame/tn/tn-othergame);
+          width: 0em;
+}
+
+#tn-othervideo {
+    background-image: url(images/othervideo/tn/tn-othervideo);
+         width: 0em;
+}
+
+#container div.allowHover:hover{
+        -webkit-filter: grayscale(0%);
+        cursor: pointer;
+}
+a:hover {
+    background-color: #ddff02;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+}
+
+.underText {
+    font-family: Gotham, Avenir, sans-serif;
+    font-weight: lighter;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: .8em;
+    opacity: .5;
+    z-index: 2;
+    
+}
+
+.frontgraph {
+    background-image: url(linez.gif)
+}
