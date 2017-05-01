@@ -10,9 +10,9 @@
     display: none;
 }
 #name {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 18.5%;
+    left: 8.5%;
     position: relative;
     color: black;
     text-align: left;
@@ -21,9 +21,10 @@
     z-index: 2;
 }
 #back{
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
+
     font-weight: lighter;
-    left: 18.5%;
+    left: 8.5%;
     position: relative;
     color: black;
     text-align: left;
@@ -31,24 +32,28 @@
     opacity: .5;
     z-index: 2;
 }
+#about {
+    opacity: .5;
+    z-index: 3;
+}
 #description {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 20%;
+    left: 10%;
     position: relative;
     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: 1;
     z-index: 2;
     width: 30em
 }
 
 
 #title {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 20%;
+    left: 10%;
     position: relative;
     color: black;
     text-align: left;
@@ -64,7 +69,8 @@ a {
 
 #container{
     position: absolute;
-    left: 20%;
+    top: 25vh;
+    left: 30vw;
 }
 
 #container img {
@@ -73,7 +79,7 @@ a {
 
 .upperSpacer{
     position: relative;
-    height: 100px;
+    height: 10vh;
 }
 
 .spacer { 
@@ -83,19 +89,9 @@ a {
 
 .outerSpacer {
     position: relative;
-    height: 40px;
+    height: 1vh;
 }
 
-div[class^="innerText-"] {
-    font-family: Gotham, Avenir, sans-serif;
-    font-weight: lighter;
-    color: black;
-    font-size: .8em;
-    position: absolute;
-    width: 400px;
-    margin-left: 33.5em;
-    opacity: 0;
-}
 
 div[id^="tn-"] {
     position: relative;
@@ -104,66 +100,37 @@ div[id^="tn-"] {
     background-size: 400px;
     background-position: left;
     background-repeat: no-repeat;
-    overflow: hidden;
+/*    overflow: hidden;*/
     -webkit-filter: grayscale(100%);
     -webkit-transition: -webkit-filter 2500ms;
     z-index: 2;
     
 }
 
+#tn-motiongraphics {
+    background-image: url(images/motiongraphics/tn/wide.jpg);
+         width: 40em;
+}
+
 #tn-graphicdesign {
     background-image: url(images/graphicdesign/tn/tn-graphicdesign.jpg);
-         width: 0em;
+         width: 40em;
 }
 
-#tn-float {
-    background-image: url(images/float/tn/tn-float.png);
-         width: 0em;
-}
-
-#tn-othervideo {
-    background-image: url(images/othervideo/tn/tn-othervideo);
-         width: 0em;
-}
 
 #tn-hive {
-    background-image: url(images/hive/tn/4_tn.jpg);
-        width: 0em;
+    background-image: url(images/hive/tn/2_tn_wide.jpg);
+        width: 40em;
 }
 
-#tn-noisy {
-    background-image: url(images/noisey/tn/1_tn.jpg);
-        width: 0em;
+#tn-stilllife {
+    background-image: url(images/stilllife/tn/1_wide.jpg);
+        width: 40em;
 }
 
-#tn-map {
-    background-image: url(images/mapstutter/tn/1-tn.jpg);
-      width: 0em;
-}
-
-#tn-darkroom {
-    background-image: url(images/darkroom/tn/2-tn.jpg);
-    width: 0em;
-}
-
-#tn-surface {
-    background-image: url(images/surface/tn/3-tn.jpg);
-    width: 0em;
-}
-
-#tn-screws {
-    background-image: url(images/shakingscrews/tn/screws-tn);
-        width: 0em;
-}
-
-#tn-othergame {
-    background-image: url(images/othergame/tn/tn-othergame);
-          width: 0em;
-}
-
-#tn-othervideo {
-    background-image: url(images/othervideo/tn/tn-othervideo);
-         width: 0em;
+#tn-understated {
+    background-image: url(images/understated/1.jpg);
+    width: 40em;
 }
 
 #container div.allowHover:hover{
@@ -177,10 +144,13 @@ a:hover {
 
 footer {
     position: absolute;
+    left: 80%;
+    
 }
 
 .underText {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
+    letter-spacing: 2px;
     font-weight: lighter;
     position: relative;
     color: black;
