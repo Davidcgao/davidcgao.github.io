@@ -49,7 +49,9 @@
     width: 30em
 }
 
-
+#bio {
+     margin-left: 10%;
+}
 #title {
     font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
@@ -107,28 +109,28 @@ div[id^="tn-"] {
 
 #tn-motiongraphics {
     background-image: url(images/motiongraphics/tn/wide.jpg);
-         width: 40em;
+         width: 25em;
 }
 
 #tn-graphicdesign {
     background-image: url(images/graphicdesign/tn/tn-graphicdesign.jpg);
-         width: 40em;
+         width: 25em;
 }
 
 
 #tn-hive {
     background-image: url(images/hive/tn/2_tn_wide.jpg);
-        width: 40em;
+        width: 25em;
 }
 
 #tn-stilllife {
     background-image: url(images/stilllife/tn/1_wide.jpg);
-        width: 40em;
+        width: 25em;
 }
 
 #tn-understated {
     background-image: url(images/understated/tn/wide.jpg);
-    width: 40em;
+    width: 25em;
 }
 
 #container div.allowHover:hover{
