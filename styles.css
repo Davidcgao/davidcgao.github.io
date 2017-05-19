@@ -1,3 +1,8 @@
+.upperText {
+  margin: auto;
+  max-width: 850px;
+}
+
 .subtext {
     font-size: .8em;
     font-style: italic;
@@ -17,34 +22,29 @@
     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
+    display: inline-block;
 }
 #back{
     font-family: Helvetica, Avenir, sans-serif;
 
     font-weight: lighter;
-    left: 8.5%;
-    position: relative;
+    margin-left: 8.5%;
     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
-}
-#about {
-    opacity: .5;
-    z-index: 3;
 }
 #description {
     font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 10%;
-    position: relative;
+    margin-left: 10%;
     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: 1;
+    opacity: .7;
     z-index: 2;
     width: 30em
 }
@@ -53,12 +53,11 @@
 #title {
     font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 10%;
-    position: relative;
-    color: black;
+   margin-left: 10%;
+      color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
 }
 
@@ -67,12 +66,11 @@ a {
     color: black;
 }
 
-#container{
-    position: absolute;
-    top: 25vh;
-    left: 30vw;
+#container {
+  left: 43vw;
+  position: absolute;
+  top: 15vh;
 }
-
 #container img {
     opacity: 0;
 }
@@ -95,7 +93,7 @@ a {
 
 div[id^="tn-"] {
     position: relative;
-    height: 1em;
+    height: 0em;
 
     background-size: 400px;
     background-position: left;
@@ -129,7 +127,7 @@ div[id^="tn-"] {
 }
 
 #tn-understated {
-    background-image: url(images/understated/1.jpg);
+    background-image: url(images/understated/tn/wide.jpg);
     width: 40em;
 }
 
@@ -138,7 +136,6 @@ div[id^="tn-"] {
         cursor: pointer;
 }
 a:hover {
-    background-color: #ddff02;
     cursor: pointer;
 }
 
@@ -161,6 +158,78 @@ footer {
     
 }
 
-.frontgraph {
-    background-image: url(linez.gif)
+
+footer #title {
+  display: none;
 }
+
+@media only screen and (max-width:767px){
+	.upperSpacer {
+  height: 6vh;
+  position: relative;
+}
+footer #title {
+  display: block;
+  font-size: 16px;
+  position: static;
+  text-align: center;
+  margin: 10px 0;
+}
+footer #title img {
+  width: 45px !important;
+  height: 45px !important;
+}
+.allowHover {
+  width: 100% !important;
+}
+#title{
+	display:none;
+}
+#container {
+  left: 30vw;
+  position: static;
+  top: 25vh;
+}
+.allowHover {
+  width: 100% !important;
+  background-size: cover !important;
+}
+footer {
+  left: 80%;
+  position: static;
+}
+footer #title a {
+  display: block;
+  margin: 10px 0;
+}
+#name {
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.8;
+  position: static;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+}
+#description {
+  color: black;
+  font-family: Helvetica,Avenir,sans-serif;
+  font-size:14px;
+  font-weight: lighter;
+  margin: 20px;
+  opacity: 1;
+  text-align: left;
+  width: auto;
+  z-index: 2;
+  line-height:22px;
+}
+.subtext {
+  font-size: 12px;
+  font-style: italic;
+
+}
+div[id^="tn-"] {
+   filter: grayscale(0%);
+}
+	
+	}

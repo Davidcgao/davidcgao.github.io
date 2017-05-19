@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="styles.css"/>
     <script type="text/javascript" src="jquery-1.8.3.min.js" ></script>
 
@@ -11,7 +12,7 @@
     <title>David Gao</title>
 
     
-<meta name="description" content="David Gao is a visual artist based in Los Angeles.">
+<meta name="description" content="David Gao is a visual artist and motion designer based in Los Angeles.">
     
 </head>
         
@@ -22,8 +23,8 @@
                 <p id="name">
                
                    DAVID GAO <br> 
-                    DESIGNER / <br>
-                    MOTION GRAPHICS ARTIST
+                    VISUAL ARTIST / <br>
+                    MOTION DESIGNER
                 </p>
                 <div id="title">
                 <a class="subtext" >filter by: </a>
@@ -34,7 +35,7 @@
                     <a id="sound" class="subtext">motion</a>
                     <br><br>
                     
-                     <a class="link" href="about/index.html" id="about"> ABOUT</a>
+                     <a class="link" href="about/index.html"> ABOUT</a>
                 <br>
                 <a class="link" href="mailto:davidgao22@gmail.com?Subject=Hello" target="_top" id="contact">CONTACT</a> 
         <br><br>
@@ -42,21 +43,23 @@
                 
                 </div>
                 
+<!--
  <audio id="note1" preload="auto">
 <source src="sound/c.mp3"></source>
 This browser does not support the HTML5 audio tag.
 </audio>	
+-->
     
     
         <div id="container"> 
-  <audio id="singleAudio"></audio>
+<!--  <audio id="singleAudio"></audio>-->
 
             <div class="outerSpacer"> </div>
 
 
               
-            <a href="motiongraphics/indexlllllllclass="link"> <div id="tn-motiongraphics" class="allowHover"> </div> </a>          
-              
+            <a href="motiongraphics/index.html" class="link"> <div id="tn-motiongraphics" class="allowHover"> </div> </a>          
+                <div class="spacer"> </div>
             
             <a href="stilllife/index.html" class="link"> <div id="tn-stilllife" class="allowHover"> </div> </a>          
                 <div class="spacer"> </div>
@@ -74,19 +77,26 @@ This browser does not support the HTML5 audio tag.
         </div>
             </div>
 
-    <footer>  
+    <footer> 
+    <div id="title">
+                                  
+                     <a class="link" href="about/index.html" id="about"> ABOUT</a>
+                               <a class="link" href="mailto:davidgao22@gmail.com?Subject=Hello" target="_top" id="contact">CONTACT</a> 
+       <a href="https://www.instagram.com/davgao/" > <img src="images/instacon.png" height="25" width="25"></a>
+                
+                </div> 
     </footer>
     
 </body>
 <script type="text/javascript" src="script.js" ></script>
-<script>$(function() {
-        $('#tn-motiongraphics').delay(300).animate({'height': '6em'}, 600);
-        $('#tn-stilllife').delay(300).animate({'height': '6em'}, 600);
-        $('#tn-hive').delay(500).animate({'height': '6em'}, 600);
-        $('#tn-understated').delay(700).animate({'height': '6em'}, 600);
-        $('#tn-graphicdesign').delay(900).animate({'height': '6em'}, 600);
-
+<script>$(window).load(function () {
+$(function() {
+        $('#tn-motiongraphics').delay(100).animate({'height': '6em'}, 600);
+        $('#tn-stilllife').delay(100).animate({'height': '6em'}, 600);
+        $('#tn-hive').delay(300).animate({'height': '6em'}, 600);
+        $('#tn-understated').delay(500).animate({'height': '6em'}, 600);
+        $('#tn-graphicdesign').delay(700).animate({'height': '6em'}, 600);
     
-    
+});
 });</script>
 </html

@@ -6,38 +6,7 @@
         window.location = newLocation;
  }
 
-var singleAudio = ["audio1.mp3", "audio2.mp3", "audio3.mp3", "audio4.mp3"];
-var $audio = $('audio');
-
-var chordAudio = ["chord1.mp3", "chord2.mp3", "chord3.mp3", "chord4.mp3", "chord4.mp3"];
-var $audioChord = $('audio');
-
-
-function getRandomAudio() {
-    var max = singleAudio.length;
-    return Math.floor(Math.random() * (max + 1));
-}
-
-function getRandomChord() {
-    var max = chordAudio.length;
-    return Math.floor(Math.random() * (max + 1));
-}
-
-function playChord() {
-  var index = getRandomChord();
-  $audioChord.attr('src', chordAudio[index]);
-  $audioChord.get(0).play();
-}
-
-
-function playAudio() {
-  var index = getRandomAudio();
-  $audio.attr('src', singleAudio[index]);
-  $audio.get(0).play();
-}
-
 function graphicdesignExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-graphicdesign').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -48,7 +17,6 @@ function graphicdesignExpand () {
 
 
 function floatExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-float').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -58,7 +26,6 @@ function floatExpand () {
 }
 
 function hiveExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-hive').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -68,7 +35,6 @@ function hiveExpand () {
 }
 
 function noisyExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-noisy').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -78,7 +44,6 @@ function noisyExpand () {
 }
 
 function mapExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-map').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -88,7 +53,6 @@ function mapExpand () {
 }
 
 function darkroomExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-darkroom').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -98,7 +62,6 @@ function darkroomExpand () {
 }
 
 function surfaceExpand () {  
-    playAudio();
     $(this).clearQueue();
     $('.innerText-surface').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -108,7 +71,6 @@ function surfaceExpand () {
 }
 
 function screwsExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-screws').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -118,7 +80,6 @@ function screwsExpand () {
 }
 
 function otherExpand () {   
-    playAudio();
     $(this).clearQueue();
     $('.innerText-').clearQueue();
     $(this).animate({'width': '36em'}, 500);
@@ -158,13 +119,11 @@ function surfaceContract () {
 
 
 //category select
-
 function allSelect (){
     console.log("triggered");
                 $('#sound').css("background-color", "transparent");
         $('#design').css("background-color", "transparent");
         $('#interactive').css("background-color", "transparent");
-        playChord();
           $('#tn-motiongraphics').clearQueue().animate({'width': '40em'}, 500);
       $('#tn-graphicdesign').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-hive').clearQueue().animate({'width': '40em'}, 500);
@@ -176,8 +135,6 @@ function designSelect (){
         $(this).css("background-color", "#ddff02");
         $('#interactive').css("background-color", "transparent");
         $('#sound').css("background-color", "transparent");
-        
-            playChord();
             $('#tn-hive').clearQueue().animate({'width': '10em'}, 500);
         $('#tn-stilllife').clearQueue().animate({'width': '10em'}, 500);
 
@@ -191,7 +148,6 @@ function intSelect (){
         $(this).css("background-color", "#ddff02");
         $('#design').css("background-color", "transparent");
         $('#sound').css("background-color", "transparent");
-            playChord();
               $('#tn-motiongraphics').clearQueue().animate({'width': '10em'}, 500);
         $('#tn-understated').clearQueue().animate({'width': '10em'}, 500);
     $('#tn-graphicdesign').clearQueue().animate({'width': '10em'}, 500);
@@ -205,7 +161,6 @@ function soundSelect (){
             $(this).css("background-color", "#ddff02");
         $('#design').css("background-color", "transparent");
         $('#interactive').css("background-color", "transparent");
-            playChord();
         $('#tn-hive').clearQueue().animate({'width': '10em'}, 500);
         $('#tn-understated').clearQueue().animate({'width': '10em'}, 500);
     
@@ -214,7 +169,6 @@ function soundSelect (){
         $('#tn-stilllife').clearQueue().animate({'width': '40em'}, 500);
 
 }
-
 //load page
 
 

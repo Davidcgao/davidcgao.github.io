@@ -6,50 +6,43 @@
     display: none;
 }
 #name {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 18.5%;
-    position: relative;
-    color: black;
+     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
 }
 #back{
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 18.5%;
-    position: relative;
-    color: black;
+     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
 }
 #description {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 20%;
-    position: relative;
-    color: black;
+      color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
     width: 50em
 }
 
 
 #title {
-    font-family: Gotham, Avenir, sans-serif;
+    font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;
-    left: 20%;
-    position: relative;
+      position: relative;
     color: black;
     text-align: left;
     font-size: .8em;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
 }
 
@@ -59,8 +52,12 @@ a {
 }
 
 #container{
-    position: absolute;
-    left: 20%;
+    
+}
+.upperText{
+max-width:700px;
+	width:100%;
+margin:auto;	
 }
 
 #container img {
@@ -111,7 +108,6 @@ div[id^="tn-"] {
         cursor: pointer;
 }
 #back:hover {
-    background-color: #ddff02;
     cursor: pointer;
     width: 45px;
 }
@@ -123,4 +119,42 @@ footer {
 .fadeElement {
     opacity: 0%;
     padding:0em 1em 1em 0em;
+}
+
+@media only screen and (max-width:767px){
+#container {
+  margin:0 3%;
+  position:static;
+}	
+#back {
+    margin: 0 2.5%;
+  }
+  #title {
+  margin:0 2%;
+ position:static;
+ }
+#description {
+  margin:0 2%;
+  width: 100%;
+}
+#container {
+  margin: 0 10px;
+  position: static;
+  width: auto;
+}
+#container img {
+  width: 100%;
+}
+#container a img {
+  padding: 0;
+  width: calc(50% - 3px);
+}
+iframe {
+  width: 100%;
+  height:250px;
+}
+.upperSpacer {
+  height: 50px;
+  position: relative;
+}
 }
