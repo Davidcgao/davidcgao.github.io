@@ -5,6 +5,13 @@
 .upperText {
     display: none;
 }
+
+.typeOne {
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+
 #name {
     font-family: Helvetica, Avenir, sans-serif;
     font-weight: lighter;

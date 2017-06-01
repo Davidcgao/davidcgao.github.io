@@ -121,7 +121,7 @@ function surfaceContract () {
 //category select
 function allSelect (){
     console.log("triggered");
-                $('#sound').css("background-color", "transparent");
+                $('#motion').css("background-color", "transparent");
         $('#design').css("background-color", "transparent");
         $('#interactive').css("background-color", "transparent");
           $('#tn-motiongraphics').clearQueue().animate({'width': '40em'}, 500);
@@ -134,7 +134,7 @@ function designSelect (){
     console.log("triggered");
         $(this).css("background-color", "#ddff02");
         $('#interactive').css("background-color", "transparent");
-        $('#sound').css("background-color", "transparent");
+        $('#motion').css("background-color", "transparent");
             $('#tn-hive').clearQueue().animate({'width': '10em'}, 500);
         $('#tn-stilllife').clearQueue().animate({'width': '10em'}, 500);
 
@@ -147,7 +147,7 @@ function intSelect (){
     console.log("triggered");
         $(this).css("background-color", "#ddff02");
         $('#design').css("background-color", "transparent");
-        $('#sound').css("background-color", "transparent");
+        $('#motion').css("background-color", "transparent");
               $('#tn-motiongraphics').clearQueue().animate({'width': '10em'}, 500);
         $('#tn-understated').clearQueue().animate({'width': '10em'}, 500);
     $('#tn-graphicdesign').clearQueue().animate({'width': '10em'}, 500);
@@ -156,7 +156,7 @@ function intSelect (){
         $('#tn-hive').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-stilllife').clearQueue().animate({'width': '40em'}, 500);
 }
-function soundSelect (){
+function motionSelect (){
     console.log("triggered");
             $(this).css("background-color", "#ddff02");
         $('#design').css("background-color", "transparent");
@@ -177,7 +177,7 @@ $(document).ready(function(){
     $('#allWork').click(allSelect);
     $('#design').click(designSelect);
     $('#interactive').click(intSelect);
-    $('#sound').click(soundSelect);
+    $('#motion').click(motionSelect);
     
     $('.upperText').css('display', 'none');
     $('.upperText').fadeIn(1000); 

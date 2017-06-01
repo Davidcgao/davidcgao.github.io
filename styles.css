@@ -3,6 +3,17 @@
   max-width: 850px;
 }
 
+.typeOne {
+    letter-spacing: .1em;
+    font-weight: bold;
+     line-height: 200%;
+}
+
+.typeTwo {
+    letter-spacing: .1em;
+        font-weight: lighter;
+     line-height: 200%;
+}
 .subtext {
     font-size: .8em;
     font-style: italic;
@@ -130,6 +141,11 @@ div[id^="tn-"] {
 
 #tn-understated {
     background-image: url(images/understated/tn/wide.jpg);
+    width: 25em;
+}
+
+#tn-collaboration {
+    background-image: url(images/collaboration/tn/tn-collaboration.jpg);
     width: 25em;
 }
 
