@@ -19,25 +19,30 @@
     
 </head>
         
-<body>    
+<body onLoad="myFunction()" class="home">    
+<div id="loader"></div>
+<div  id="main-page" class="animate-bottom"> 
+    <div id="blackbar"></div>
             <div class="upperText">
             <div class="upperSpacer"></div>
-                
+               <div class="navbar"> 
                 <p id="name">
                <b class="typeOne">
                    DAVID GAO <br> </b>
                      <b class="typeTwo">
                     VISUAL ARTIST / <br> 
-                         MOTION DESIGNER </b><br><br>
-                                        <b class="typeTwo"> <a class="link" href="about/index.html"> ABOUT</a> 
+                         MOTION DESIGNER </b><br>
+                         <div class="inner-pages">
+                                        <b class="typeTwo"> <a class="link" href="about/about.html"> ABOUT</a> 
                 <br>
                         <a class="link" href="mailto:davidgao22@gmail.com?Subject=Hello" target="_top" id="contact">CONTACT</a> </b>
+                        
                    <br> <br>
-                    <a href="https://www.instagram.com/davgao/" > <img src="images/instacon.png" height="25" width="25"></a>
-                <a href="https://www.facebook.com/davgaoart" > <img src="images/facebook_4096_black.png" height="25" width="25"></a>
+                    <a class="link" href="https://www.instagram.com/davgao/" > <img src="images/instacon.png" height="25" width="25"></a>
+                <a class="link" href="https://www.facebook.com/davgaoart" > <img src="images/facebook_4096_black.png" height="25" width="25"></a>
        
 
-                </p>
+                </p></div></div>
                 <div id="title">
                 <a class="subtext" >filter by: </a>
                 <br>
@@ -57,21 +62,21 @@
 
 
               
-            <a href="motiongraphics/index.html" class="link"> <div id="tn-motiongraphics" class="allowHover"> </div> </a>          
+            <a href="motiongraphics" class="link"> <div id="tn-motiongraphics" class="allowHover"> </div> </a>          
                 <div class="spacer"> </div>
             
-            <a href="collaboration/index.html" class="link"> <div id="tn-collaboration" class="allowHover"> </div> </a>          
+            <a href="collaboration/collaboration.html" class="link"> <div id="tn-collaboration" class="allowHover"> </div> </a>          
                 <div class="spacer"> </div>
             
             
             
-            <a href="stilllife/index.html" class="link"> <div id="tn-stilllife" class="allowHover"> </div> </a>          
+            <a href="stilllife/stilllife.html" class="link"> <div id="tn-stilllife" class="allowHover"> </div> </a>          
                 <div class="spacer"> </div>
             
-                        <a href="hive/index.html" class="link"> <div id="tn-hive" class="allowHover"> </div> </a> 
+                        <a href="hive/hive.html" class="link"> <div id="tn-hive" class="allowHover"> </div> </a> 
                 <div class="spacer"> </div>
             
-            <a href="understated/index.html" class="link"> <div id="tn-understated" class="allowHover"> </div> </a>
+            <a href="understated/understated.html" class="link"> <div id="tn-understated" class="allowHover"> </div> </a>
                            <div class="spacer"> </div>
     
 
@@ -81,11 +86,22 @@
             </div>
 
     <footer> 
+<div class="inner-pages">                  
+                                        <b class="typeTwo"> <a class="link" href="about/about.html"> ABOUT</a> 
+                <br>
+                        <a class="link" href="mailto:davidgao22@gmail.com?Subject=Hello" target="_top" id="contact">CONTACT</a> </b>
+                        
+                   <br> <br>
+                    <a class="link" href="https://www.instagram.com/davgao/" > <img src="images/instacon.png" height="25" width="25"></a>
+                <a class="link" href="https://www.facebook.com/davgaoart" > <img src="images/facebook_4096_black.png" height="25" width="25"></a>
+       
+
+                </p></div>
     </footer>
-    
+    </div>
 </body>
 <script type="text/javascript" src="script.js" ></script>
-<script>$(window).load(function () {
+<!--<script>$(window).load(function () {
 $(function() {
         $('#tn-motiongraphics').delay(100).animate({'height': '6em'}, 600);
         $('#tn-collaboration').delay(300).animate({'height': '6em'}, 600);
@@ -95,5 +111,5 @@ $(function() {
 
     
 });
-});</script>
+});</script>-->
 </html
