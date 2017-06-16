@@ -125,7 +125,7 @@ function allSelect (){
         $('#design').css("background-color", "transparent");
         $('#interactive').css("background-color", "transparent");
           $('#tn-motiongraphics').clearQueue().animate({'width': '40em'}, 500);
-      $('#tn-graphicdesign').clearQueue().animate({'width': '40em'}, 500);
+      $('#tn-collaboration').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-hive').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-stilllife').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-understated').clearQueue().animate({'width': '40em'}, 500);
@@ -140,7 +140,7 @@ function designSelect (){
 
               $('#tn-motiongraphics').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-understated').clearQueue().animate({'width': '40em'}, 500);
-            $('#tn-graphicdesign').clearQueue().animate({'width': '40em'}, 500);
+            $('#tn-collaboration').clearQueue().animate({'width': '40em'}, 500);
     
 }
 function intSelect (){
@@ -150,7 +150,7 @@ function intSelect (){
         $('#motion').css("background-color", "transparent");
               $('#tn-motiongraphics').clearQueue().animate({'width': '10em'}, 500);
         $('#tn-understated').clearQueue().animate({'width': '10em'}, 500);
-    $('#tn-graphicdesign').clearQueue().animate({'width': '10em'}, 500);
+    $('#tn-collaboration').clearQueue().animate({'width': '10em'}, 500);
     
     
         $('#tn-hive').clearQueue().animate({'width': '40em'}, 500);
@@ -165,7 +165,7 @@ function motionSelect (){
         $('#tn-understated').clearQueue().animate({'width': '10em'}, 500);
     
               $('#tn-motiongraphics').clearQueue().animate({'width': '40em'}, 500);
-        $('#tn-graphicdesign').clearQueue().animate({'width': '40em'}, 500);
+        $('#tn-collaboration').clearQueue().animate({'width': '40em'}, 500);
         $('#tn-stilllife').clearQueue().animate({'width': '40em'}, 500);
 
 }
@@ -197,3 +197,13 @@ $(document).ready(function(){
     }
     
 });
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("main-page").style.display = "block";
+}
